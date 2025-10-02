@@ -1,23 +1,64 @@
-# 🌸 Jardín Interactivo del Amor - de Dario
+# 🌸 Special Garden - Jardín Interactivo del Amor
 
-Un jardín romántico e interactivo donde cada flor cuenta una historia especial. Cultiva flores únicas, descubre mensajes de amor y crea momentos mágicos.
+> **Un jardín romántico e interactivo donde cada flor cuenta una historia especial**
+
+[![GitHub Pages](https://img.shields.io/badge/Demo-Live%20Preview-ff69b4?style=for-the-badge&logo=github-pages)](https://leiderdario.github.io/Special-Garden/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+
+![Special Garden Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=🌸+Special+Garden+🌸)
+
+---
+
+## 🚀 **[👉 Prueba la Demo en Vivo](https://leiderdario.github.io/Special-Garden/)**
+
+Cultiva flores únicas, descubre mensajes de amor y crea momentos mágicos en tu propio jardín digital.
 
 ## ✨ Características Principales
 
-### 🌺 Sistema de Flores Avanzado
-- **6 tipos únicos de flores**: Rosa, Tulipán, Girasol, Margarita, Orquídea, Lirio
-- **Colores estacionales**: Los colores cambian según la estación del año
-- **Animaciones fluidas**: Efectos de crecimiento, floración y hover
-- **Límite inteligente**: Máximo 50 flores para rendimiento óptimo
+### � **Experiencia Interactiva**
+- **Cultiva flores únicas** con un simple clic
+- **6 tipos de flores** diferentes: Rosa, Tulipán, Girasol, Margarita, Orquídea, Lirio
+- **45+ mensajes románticos únicos** en cada flor
+- **Efectos de partículas** mágicos y animaciones fluidas
 
-### 💕 Mensajes Personalizados
-- **45+ mensajes únicos** organizados en categorías (románticos, inspiradores, cariñosos)
-- **Sistema de rotación** que evita repetición hasta completar todos los mensajes
-- **Personalización**: Agregar nombres y mensajes personalizados
-- **Compartir**: Funcionalidad para compartir mensajes favoritos
+### 🎨 **Personalización Avanzada**
+- **5 temas visuales** intercambiables
+- **Colores estacionales** que cambian automáticamente
+- **Nombres personalizados** para ti y tu persona especial
+- **Mensajes customizados** adicionales
 
-### 🎨 Experiencia Visual Rica
-- **5 temas visuales**: Romántico, Soñador, Naturaleza, Cósmico, Atardecer
+### 🏆 **Sistema de Gamificación**
+- **5 logros desbloqueables** con notificaciones especiales
+- **Contador de progreso** con estadísticas
+- **Sistema de persistencia** que guarda tu progreso
+
+### 📱 **Diseño Responsive**
+- **Optimizado para móviles** con controles táctiles
+- **Tutorial interactivo** para nuevos usuarios
+- **Panel de ayuda** rápida y accesible
+
+## 🛠️ Instalación Rápida
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/leiderdario/Special-Garden.git
+
+# Abrir en tu navegador
+cd Special-Garden
+# Doble clic en index-advanced.html ¡y listo!
+```
+
+## � Cómo Usar
+
+1. **Abre la aplicación** → Tutorial automático te guiará
+2. **Haz clic en el jardín** → Crea tu primera flor
+3. **Toca las flores** → Descubre mensajes especiales
+4. **Explora funciones** → Usa atajos de teclado
+
+### ⌨️ **Atajos de Teclado**
+- **S** → Cambiar estación • **T** → Cambiar tema • **R** → Reiniciar • **?** → Ayuda
 - **Efectos de partículas**: Corazones, estrellas, chispas y burbujas
 - **Animaciones por estaciones**: Pétalos cayendo automáticamente
 - **Glassmorphism**: Diseño moderno con efectos de cristal
