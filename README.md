@@ -1,4 +1,4 @@
-# 🌸 Special Garden - Jardín Interactivo del Amor
+# 🌸 Special Garden - Jardín Interactivo Romantc
 
 > **Un jardín romántico e interactivo donde cada flor cuenta una historia especial**
 
