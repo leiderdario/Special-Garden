@@ -2,7 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Jardín Especial">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
     <title>Un Jardín Especial Para Ti 🌸 - De Dario</title>
     
     <!-- Meta tags para SEO y compartir -->
@@ -585,27 +590,48 @@
             }
         };
         
-        // Prevenir zoom accidental en móviles
+        // Prevenir zoom accidental en móviles y mejorar iOS Safari
         document.addEventListener('gesturestart', function (e) {
             e.preventDefault();
         });
         
-        // Mejorar experiencia táctil en móviles
+        // Prevenir comportamientos problemáticos en iOS
+        document.addEventListener('touchstart', function() {}, { passive: true });
+        
+        // Mejorar experiencia táctil en móviles (especialmente iOS)
         let touchStartY = 0;
+        let touchStartX = 0;
+        
         document.addEventListener('touchstart', function(e) {
             touchStartY = e.touches[0].clientY;
+            touchStartX = e.touches[0].clientX;
         }, { passive: true });
         
         document.addEventListener('touchmove', function(e) {
+            // Prevenir el bounce de iOS Safari
+            if (e.target === document.body || e.target === document.documentElement) {
+                e.preventDefault();
+            }
+            
             const touchY = e.touches[0].clientY;
             const touchDiff = touchStartY - touchY;
             
             // Prevenir scroll del body solo en ciertas condiciones
-            if (document.querySelector('.welcome-tutorial.active') || 
-                document.querySelector('.quick-help-panel:not(.hidden)')) {
+            const tutorialActive = document.querySelector('.welcome-tutorial.active');
+            const helpPanelActive = document.querySelector('.quick-help-panel:not(.hidden)');
+            
+            if (tutorialActive || helpPanelActive) {
                 e.preventDefault();
             }
         }, { passive: false });
+        
+        // Fix para iOS Safari - prevenir zoom en inputs
+        document.addEventListener('touchend', function(e) {
+            const inputElements = ['INPUT', 'TEXTAREA', 'SELECT'];
+            if (inputElements.includes(e.target.tagName)) {
+                e.target.style.fontSize = '16px';
+            }
+        });
         
         // PWA: Service Worker (futuro)
         if ('serviceWorker' in navigator) {
