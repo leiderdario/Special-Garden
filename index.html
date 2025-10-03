@@ -73,6 +73,7 @@
     <div id="controls-panel" class="controls-panel hidden">
         <button id="soundToggle" class="control-btn" title="Activar/Desactivar sonidos">🔊</button>
         <button id="themeToggle" class="control-btn" title="Cambiar tema">🎨</button>
+        <button id="resetGarden" class="control-btn mobile-only" title="Reiniciar jardín">🔄</button>
         <button id="fullscreenToggle" class="control-btn" title="Pantalla completa">⛶</button>
     </div>
 
@@ -438,6 +439,14 @@
                     document.documentElement.requestFullscreen();
                 } else {
                     document.exitFullscreen();
+                }
+            });
+            
+            // Control de reinicio jardín (para móviles)
+            document.getElementById('resetGarden').addEventListener('click', () => {
+                if (confirm('¿Estás seguro de que quieres reiniciar el jardín? Se perderán todas las flores.')) {
+                    garden.resetGarden();
+                    garden.showNotification('Jardín reiniciado 🌱', 'info');
                 }
             });
             

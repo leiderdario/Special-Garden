@@ -257,11 +257,9 @@ class GardenManager {
         panel.appendChild(toggleBtn);
         panel.appendChild(content);
         
-        // En móviles, empezar colapsado
-        if (window.innerWidth <= 768) {
-            panel.classList.add('collapsed');
-            toggleBtn.setAttribute('aria-expanded', 'false');
-        }
+        // Empezar siempre colapsado (botón)
+        panel.classList.add('collapsed');
+        toggleBtn.setAttribute('aria-expanded', 'false');
         
         document.body.appendChild(panel);
         this.updateAchievementPanel();
